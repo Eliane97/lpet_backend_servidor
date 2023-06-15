@@ -1,14 +1,21 @@
 package org.example.services;
 
+
+import org.example.Repositories.UserRepository;
 import org.example.models.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
-    public void registrerUser(User user){
+   @Autowired
+    private UserRepository usuarioRepository ;
 
+ public String registrarUsuario (User usuario){
+    if (usuario.getId_usuario()==null) {
+        usuarioRepository.save(usuario);
+        return "Usuario guardado";
     }
-    public String loginUser(User user){
-        return "";
-    }
+    else {return "error, usuario existente no se pudo cargar el usuario, intente con otro";}
+ }
 }

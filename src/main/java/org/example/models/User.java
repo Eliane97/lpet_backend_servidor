@@ -1,15 +1,38 @@
 package org.example.models;
+
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-// Con libreria lombok puedo ahorra codigo de setters,getters y constructores
-@NoArgsConstructor
+
+@Entity
+@Table(name = "usuarios")
+@Data
 @AllArgsConstructor
-@Getter
-@Setter
+@NoArgsConstructor
 public class User {
-    private String email;
-    private String password;
-    private String username;
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id_usuario;
+
+    @Column(name = "correo_electronico ", nullable = false, length = 254 )
+    private String correo_electronico;
+
+    @Column(name = "contrasena", nullable = false,length = 120)
+    private String contrasena;
+
+    @Column(name = "nombre_usuario",nullable = false,length = 30)
+    private String nombre_usuario;
+
+
+/*
+        @Column(nullable = false)
+        private Timestamp fecha_alta_usuarios;
+
+        @Column(nullable = false)
+        private Boolean activo;*/
+
+
 }
