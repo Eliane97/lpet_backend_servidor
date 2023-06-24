@@ -8,14 +8,21 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
-   @Autowired
-    private UserRepository usuarioRepository ;
+    @Autowired
+    private UserRepository usuarioRepository;
 
- public String registrarUsuario (User usuario){
-    if (usuario.getId_usuario()==null) {
+    public String verificarUsuario(User usuario) {
+        // Verificar si el usuario ya existe en la base de datos por su correo electrónico
+        if (usuarioRepository.findByCorreoElectronico(usuario.getCorreoElectronico())) {
+            return "Error: El usuario ya existe en la base de datos.";
+        }
+        else {
+        // Guardar el usuario en la base de datos
         usuarioRepository.save(usuario);
-        return "Usuario guardado";
+        return "Usuario guardado exitosamente.";}
     }
-    else {return "error, usuario existente no se pudo cargar el usuario, intente con otro";}
- }
-}
+
+        }
+
+
+

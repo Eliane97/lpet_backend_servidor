@@ -27,12 +27,14 @@
             <version>3.0.4</version>
             <scope>compile</scope>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.26</version>
             <scope>compile</scope>
         </dependency>
+<!--        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -56,10 +58,17 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.5</version>
+            <version>1.2.9</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.2.5.Final</version>
+            <type>pom</type>
         </dependency>
 
 
-        </dependencies>
+    </dependencies>
 
     </project>

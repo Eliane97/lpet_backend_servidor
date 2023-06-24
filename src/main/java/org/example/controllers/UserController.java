@@ -13,14 +13,20 @@ public class UserController {
     @Autowired
     private UserService service;
 
-    @PostMapping ("/usuario")// url completa: http://localhost:8080/usuario
+    @PostMapping ("/usuario")// url completa: http://localhost:8090/usuario
     public ResponseEntity<String> registrarUsuario(@RequestBody User usuario) {
-        String respuesta = service.registrarUsuario(usuario);
-        if (respuesta.contains("error")) {
+        String respuesta = service.verificarUsuario(usuario);
+        if (respuesta.contains("Error")) {
            return ResponseEntity.status(HttpStatus.PRECONDITION_FAILED).body(respuesta);
         }
        else {
         return ResponseEntity.status(HttpStatus.CREATED).body(respuesta);}
     }
 
+/*
+    @GetMapping ("/usuario")// url completa: http://localhost:8090/usuario
+    public String hola (){
+     return "Hola";
+    }
+*/
 }
