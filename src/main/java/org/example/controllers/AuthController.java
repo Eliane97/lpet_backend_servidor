@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping ("/api") // Ruta base para todos los endpoints en este controlador
-public class UserController {
+public class AuthController {
     @Autowired
     private UserService service;
 
-    @PostMapping ("/usuario")// url completa: http://localhost:8090/usuario
+    @PostMapping ("/registry")// url completa: http://localhost:8090/usuario
     public ResponseEntity<String> registrarUsuario(@RequestBody User usuario) {
         String respuesta = service.verificarUsuario(usuario);
         if (respuesta.contains("Error")) {
