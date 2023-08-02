@@ -1,0 +1,204 @@
+GET http://localhost:8081/users/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-05T120808.200.txt
+
+###
+
+POST http://localhost:8081/users/registration
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "asd@asd.com",
+  "password": "password",
+  "username": "user"
+}
+
+<> 2023-07-05T120802.201.txt
+
+###
+
+GET http://localhost:8081/users/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-05T120753.401.txt
+
+###
+
+POST http://localhost:8081/users/user
+Content-Type: application/json
+Content-Length: 13
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 1
+}
+
+<> 2023-07-05T120634.400.json
+
+###
+
+POST http://localhost:8081/users/user
+Content-Type: application/json
+Content-Length: 13
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "id": 1
+}
+
+<> 2023-07-05T120601.400.json
+
+###
+
+POST http://localhost:8081/users/registration
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "asd@asd.com",
+  "password": "password",
+  "username": "user"
+}
+
+<> 2023-07-05T120416.201.txt
+
+###
+
+GET http://localhost:8081/users/user
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-05T120320.400.json
+
+###
+
+POST http://localhost:8081/users/registration
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "asd@asd.com",
+  "password": "password",
+  "username": "user"
+}
+
+<> 2023-07-05T120313.201.txt
+
+###
+
+GET http://localhost:8081/users/all
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-05T115329.200.txt
+
+###
+
+POST http://localhost:8081/users/registration
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "asd@asd.com",
+  "password": "password",
+  "username": "user"
+}
+
+<> 2023-07-05T115314.201.txt
+
+###
+
+GET http://localhost:8081/users/all
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-05T114415.200.txt
+
+###
+
+GET http://localhost:8081/users/all
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-05T113640.200.txt
+
+###
+
+GET http://localhost:8081/users/all
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-05T112049.200.txt
+
+###
+
+POST http://localhost:8081/users/registration
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "asd@asd.com",
+  "password": "password",
+  "username": "user"
+}
+
+<> 2023-07-05T112045.201.txt
+
+###
+
+GET http://localhost:8081/users/all
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-05T112038.200.txt
+
+###
+
+POST http://localhost:8081/users/registration
+Content-Type: application/json
+Content-Length: 76
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "asd@asd.com",
+  "password": "password",
+  "username": "user"
+}
+
+<> 2023-07-05T105922.201.txt
+
+###
+
