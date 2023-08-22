@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>3.0.4</version>
+            <version>3.1.0</version>
         </dependency>
         <!--Aca agregué las dependencias de Spring-->
         <dependency>
@@ -56,10 +56,15 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.5</version>
+            <version>1.2.9</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>3.0.9</version>
+        </dependency>
 
-        </dependencies>
+    </dependencies>
 
     </project>
