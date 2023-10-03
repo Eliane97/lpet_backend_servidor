@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>3.0.4</version>
+            <version>3.1.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -38,33 +38,16 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>3.1.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.6.0</version>
-
         </dependency>
-        <!-- Dependencia SLF4J -->
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.32</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+            <version>3.1.0</version>
         </dependency>
-
-        <!-- Dependencia Logback (implementación de proveedor de registro) -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.9</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-            <version>3.0.9</version>
-        </dependency>
-
     </dependencies>
 
     </project>

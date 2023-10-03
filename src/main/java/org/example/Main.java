@@ -9,5 +9,4 @@ public class Main {
         // Para que corra la aplicaciom
         SpringApplication.run(Main.class, args);
     }
-
 }

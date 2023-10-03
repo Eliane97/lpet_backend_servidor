@@ -12,5 +12,4 @@ import lombok.Setter;
 public class Message {
     private String sender;
     private String content;
-    private String timestamp;
 }
